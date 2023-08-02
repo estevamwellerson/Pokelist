@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.77), white (44, 222, 0, 0.518));
+  background-image: url('https://i.pinimg.com/564x/ea/1d/5b/ea1d5bb4dc48f7bf0ac30e8596687be7.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+main{
+  position: relative;
+  padding-top: 0.5%;
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.text__top{
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: black;
+}
+.container__cards{
+  display: flex;
+  margin-top: 2%;
+  flex-direction: column;
+  align-items: center;
+}
+.card__rows{
+  display: flex;
+}
+.card{
+  border: 1px solid black;
+  height: 176px;
+  margin: 1%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(255, 166, 0, 0.578), black);
+  transition: .2s;
+}
+.card:hover{
+  transform:scale(1.5);
+  width: 140px;
+  height: 165px;
+}
+.pokemon__name{
+  font-family: 'Bebas Neue', sans-serif;
+}
+.img__card{
+  width: 100%;
+  max-width: 150px;
+}
+.container__button{
+  display: flex;
+  justify-content: space-between;
+}
+.buttom__next{
+  position: absolute;
+  bottom: 40%;
+  right: 15.5%;
+}
+.buttom__prev{
+  position: absolute;
+  bottom: 40%;
+  left: 12.5%;
+}
+.btn{
+  cursor: pointer;
+  border-radius: 50%;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  padding: 75%;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.btn:active{
+  box-shadow: inset -2px 3px 0 #000;
+}
+@media(min-width:768px){
+  .text__top{
+    margin-left: 17%;
+    margin-right: 17%;
+  }
+  .buttom__next{
+    right: 8.5% ;
+  }
+  .buttom__prev{
+    left: 3.5%;
+  }
+}
+@media(max-width: 426px){
+  body{
+    background-size: 102.5% 102.5%;
+  }
+  .text__top{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .buttom__next{
+    bottom: 1%;
+    right: 50%;
+  }
+  .buttom__prev{
+    bottom: 1%;
+    left: 40%;
+  }
+}
